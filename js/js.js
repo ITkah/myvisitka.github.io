@@ -1,1 +1,0 @@
-$(document).ready(function(){$("#menu").on("click","a",function(n){n.preventDefault();var o=$(this).attr("href"),t=$(o).offset().top;$("body,html").animate({scrollTop:t},1500)})});var wow=new WOW({boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0,callback:function(n){},scrollContainer:null});wow.init();
