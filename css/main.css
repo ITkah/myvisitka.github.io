@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic");
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
@@ -37,7 +38,6 @@ header {
 
 .navbar-brand {
   font-size: 1.6rem;
-  font-weight: 600;
   color: #000000;
   -webkit-transition: 0.5;
   -o-transition: 0.5;
@@ -62,7 +62,6 @@ header {
 
 .nav-link {
   color: #000000;
-  font-weight: 600;
   font-size: 1rem;
   padding: 0rem;
   text-decoration: none;
@@ -125,7 +124,7 @@ main {
   background: #F4F4F4;
   padding-bottom: 1.25rem; }
   main .banner_bg {
-    background: url("../img/banner.jpg") no-repeat center center fixed;
+    background: url("../img/banner-light.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
             background-size: cover;
     height: 100vh;
@@ -149,6 +148,9 @@ main {
           -ms-flex-align: center;
               align-items: center;
       height: 95vh; }
+      @media (max-width: 576px) {
+        main .banner_bg .banner {
+          height: 100vh; } }
       main .banner_bg .banner .banner-name h1 {
         font-size: 3.6rem; }
         @media (max-width: 994px) {
@@ -476,6 +478,9 @@ footer {
   padding: 0rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
 
 a:hover {
   text-decoration: none; }
