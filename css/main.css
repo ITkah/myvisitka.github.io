@@ -1,3 +1,4 @@
+@import url(../css/bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic");
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
@@ -232,14 +233,13 @@ main {
       main .progress {
         font-size: 0.87rem; } }
   main .portfolio .portfolio-photo {
-    position: relative;
-    margin-bottom: 1.5rem; }
+    position: relative; }
     main .portfolio .portfolio-photo:hover .portfolio-photo_wrapper::before {
       opacity: 1; }
     main .portfolio .portfolio-photo::before {
       content: "";
       display: block;
-      padding-top: 85%; }
+      padding-top: 100%; }
     main .portfolio .portfolio-photo .portfolio-photo_wrapper {
       position: absolute;
       left: 0;
@@ -477,9 +477,7 @@ footer {
   margin: 0rem;
   padding: 0rem;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-body {
+          box-sizing: border-box;
   font-family: 'Open Sans', sans-serif; }
 
 a:hover {

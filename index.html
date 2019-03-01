@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MyPortfilio</title>
 	<meta name="description" content="Portfolio Front-end ITkah">
-	<link rel="icon" href="img/it.ico">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" href="img/icon/it.ico">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -153,10 +152,10 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="maill-form">
-							<form method="POST" class="form-call">
-							  <input type="text" class="form-control" id="validationServer01" placeholder="Ваше имя" required>
-							  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваша почта" required>
-							  <textarea class="form-control" id="validationTextarea" placeholder="Ваше сообщение"></textarea>
+							<form method="POST" action="" class="form-call" id="ajaxform">
+							  <input type="text" class="form-control" id="validationServer01" name="name" placeholder="Ваше имя" required>
+							  <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Ваша почта" required>
+							  <textarea class="form-control" id="validationTextarea" name="message" placeholder="Ваше сообщение"></textarea>
 							  	<div class="button-center">
 							  		<button class="btn btn-primary" type="submit">Отправить</button>
 								</div>
@@ -212,8 +211,6 @@
 		</div>
 	</footer>
 
-</div>
-
 
 <div class="modal fade" id="tymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -230,9 +227,8 @@
   </div>
 </div>
 
-<script src="js/jquery-3.3.1.min.js" defer></script>
-<script src="js/popper.min.js" defer></script>
-<script src="js/bootstrap.min.js" defer></script>
-<script src="js/js.js" defer></script>
+</div>
+
+<script src="js/main.js" defer></script>
 </body>
 </html>	
