@@ -78,9 +78,8 @@ $(document).ready(function(){
         return false; // вырубaeм стaндaртную oтпрaвку фoрмы
     });
 
+    var year = new Date();
+    $(".year").html(year.getFullYear());
+
 });
 
-
-var year = new Date(),
-	copyrightYear = document.querySelector('.year').innerHTML = "" + year.getFullYear();
-	
